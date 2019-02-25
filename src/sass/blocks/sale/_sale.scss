@@ -1,0 +1,14 @@
+.sale {
+  position: relative;
+  height: 100%;
+  /*background-image: url(/images/offroad.jpg);*/
+  
+  &__outer {
+    overflow: hidden;
+    height: 500px;
+  } 
+}
+
+@import '__info/sale__info';
+@import '__title/sale__title';
+@import '__text/sale__text';

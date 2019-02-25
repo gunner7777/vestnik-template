@@ -1,0 +1,8 @@
+.main-menu {
+  line-height: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@import '__item/main-menu__item';
+@import '__link/main-menu__link';

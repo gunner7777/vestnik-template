@@ -1,0 +1,1 @@
+﻿Vestnik VGSHA template

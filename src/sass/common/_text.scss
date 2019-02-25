@@ -1,0 +1,21 @@
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-thin {
+    font-weight: 300;
+  }
+
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+}

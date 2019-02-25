@@ -1,0 +1,19 @@
+.categories {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  
+}
+.category {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@import '__item/category__item';
+@import '__link/category__link';
+@import '__img/category__img';
+/*@import '__img-bg/category__img-bg';*/
+@import '__text/category__text';

@@ -1,0 +1,10 @@
+mixin menu-item(text)
+  li.main-menu__item
+    a.main-menu__link(href="#")= text
+
+div.nav.shell
+  ul.main-menu.flex-block.flex-block--justify-sb
+    +menu-item("Главная")
+    +menu-item("Журнал")
+    +menu-item("Авторам")
+    +menu-item("Контакты")

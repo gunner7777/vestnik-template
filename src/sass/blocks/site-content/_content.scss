@@ -1,0 +1,28 @@
+.main {
+  p {
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: $dark_green;
+  }
+}
+
+.responsive-img {
+  width: 100%;
+}
+
+
+.media {
+  width: 45%;
+  min-width: 220px;
+  margin: 10px;
+
+  /*img {
+    max-width: 100%;
+  }*/
+}

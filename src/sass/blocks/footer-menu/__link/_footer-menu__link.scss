@@ -1,0 +1,9 @@
+.footer-menu__link {
+  display: inline-block;
+  color: $white;
+  margin: 3px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

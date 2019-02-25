@@ -1,0 +1,10 @@
+.card {
+  background-color: $white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 7px -4px rgba($black, .4);
+}
+
+@import '__name/card__name';
+@import '__marked/card__marked';
+@import '__text/card__text';
