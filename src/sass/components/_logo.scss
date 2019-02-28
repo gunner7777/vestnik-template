@@ -1,0 +1,8 @@
+.Logo {
+  background-color: #f0f;
+}
+
+@include mq-max(360px) {
+  .Logo {
+  }
+}

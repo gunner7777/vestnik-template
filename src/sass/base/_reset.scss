@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Fira+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans+Condensed|Fira+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700");
 
 html {
   box-sizing: border-box;
@@ -29,12 +27,6 @@ a {
   text-decoration: none;
 }
 
-a,
-a:visited,
-a:focus {
-  /*color: $link;*/
-}
-
 p,
 h1,
 h2,
@@ -46,9 +38,4 @@ h4 {
 .Container {
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.Flexy {
-  display: flex;
-  justify-content: space-around;
 }

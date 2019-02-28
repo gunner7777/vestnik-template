@@ -1,6 +1,12 @@
 @import "../vendor/normalize.css";
-@import "../vendor/fontawesome-all.min.css";
-@import "colors";
-@import "vars";
-@import "common";
-/* 360px */
+
+@import "./utils/mixin";
+
+/* base */
+@import "./base/colors";
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/grid";
+
+/* components */
+@import "./components/logo";
