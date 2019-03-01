@@ -1,8 +1,7 @@
 .Logo {
-  background-color: #f0f;
+  background-color: #f8f8f8;
 }
 
 @include mq-max(360px) {
-  .Logo {
-  }
+  .Logo {}
 }

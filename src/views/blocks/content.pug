@@ -1,0 +1,21 @@
+mixin article-preview(title, author, text)
+  article.ArticelPreview.Col12.ColSm12.ColMd12.ColLg12.ColXl12
+    h3.ArticelPreview-Title= title
+    p.ArticelPreview-Author= author
+    p.ArticelPreview-Text= text
+    p
+      a(href="#").ArticelPreview-Readmore Read more
+
+.main.Container
+  .Block
+    +article-preview(
+      "Lorem ipsum dolor sit ametg",
+      "Petrov AV, Ivanov PI",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ut molestias autem commodi. Illum sequi, neque error repellat dolores non quas, explicabo adipisci cum laboriosam doloremque quidem quam hic?"
+    )
+
+    +article-preview(
+      "Lorem ipsum dolor sit amet",
+      "Petrov AV, Ivanov PI",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ut molestias autem commodi. Illum sequi, neque error repellat dolores non quas, explicabo adipisci cum laboriosam doloremque quidem quam hic?"
+    )

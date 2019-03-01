@@ -10,6 +10,6 @@
   }
 }
 
-@mixin column($col, $margin: 15px) {
-  flex: 0 0 calc(100% * (#{$col} / #{$grid_columns}) - #{$margin} * 2);
+@mixin column($col) {
+  flex: 0 0 calc(100% * (#{$col} / #{$grid_columns}));
 }

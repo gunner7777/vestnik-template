@@ -1,35 +1,41 @@
-footer.footer.shell
-  .footer__wrapper.flex-block.flex-block--justify-sb
-    .footer__menu
-      p.footer__title Журнал
-      ul.footer-menu
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Контакты
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Порядок рецензирования статей
+mixin footer-menu-item(text)
+  li
+    a(href="#")= text
 
-    .footer__menu
-      p.footer__title Авторам
-      ul.footer-menu
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Правила оформления
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Правила публикации
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Подача заявки
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Рецензирование
-        li.footer-menu__item
-          a.footer-menu__link(href="#") Этика научных публикаций
-    .footer__address.address
-      p.footer__title Адрес:
-      p.address__street г.Киров,
-      p.address__street Октябрьский проспект, 133, каб. 126
-      p.address__phone +7 (8332) 77-54-53
-      p.address__phone +7 (8332) 42-15-16
-    .footer__vk-widget
-      p Здесь будет виджет из контакта
-      p А еще твиттер
-  p Лицензия СМИ
-  .copyright.text-center
+
+footer.Footer.Container
+  .Block
+    .FooterSection.Col12
+      h4.FooterSection-Title Журнал
+      ul
+        +footer-menu-item("Контакты")
+        +footer-menu-item("Порядок рецензирования статей")
+
+    .FooterSection.Col12
+      h4.FooterSection-Title Авторам
+      ul
+        +footer-menu-item("Правила оформления")
+        +footer-menu-item("Правила публикации")
+        +footer-menu-item("Подача заявки")
+        +footer-menu-item("Рецензирование")
+        +footer-menu-item("Этика научных публикаций")
+
+    .FooterSection.Col12
+      h4.FooterSection-Title Контакты
+      p.FooterSection-Line Адрес: p г.Киров, Октябрьский проспект, 133, каб. 138
+      p.FooterSection-Line
+        i.fas.fa-phone
+        span +7 (8332) 77-54-53
+      p.FooterSection-Line
+        i.fas.fa-envelope
+        span info@v-vgsha.info
+
+    .FooterSection.Col12
+      h4.FooterSection-Title Социальные сети
+      p.FooterSection-Line
+        i.fab.fa-vk
+        i.fab.fa-twitter
+
+  .Copyright.Text_Center
+    p Свидетельство о регистрации СМИ ЭЛ №ФС77-73936
     p &copy; Вестник Вятской ГСХА 16+
