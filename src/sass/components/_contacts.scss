@@ -1,3 +1,12 @@
 .Contacts {
   background-color: #f1f1f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &-Icon {
+    margin-right: 5px;
+  }
+  &-Social {
+    margin: 3px 0;
+  }
 }

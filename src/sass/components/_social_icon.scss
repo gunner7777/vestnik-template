@@ -1,0 +1,24 @@
+.SocialIcon {
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &_Header {
+    font-size: 1.8rem;
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  &-Vk {
+    background-color: rgba(72, 114, 163, 1);
+  }
+
+  &-Twitter {
+    background-color: rgba(29, 161, 242, 1);
+  }
+}

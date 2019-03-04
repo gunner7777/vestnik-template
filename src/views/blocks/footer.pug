@@ -1,13 +1,13 @@
 mixin footer-menu-item(text)
-  li
-    a(href="#")= text
+  li.FooterMenu-Item
+    a.FooterMenu-Link(href="#")= text
 
 
 footer.Footer.Container
   .Block
     .FooterSection.Col12
       h4.FooterSection-Title Журнал
-      ul
+      ul.FooterMenu
         +footer-menu-item("Контакты")
         +footer-menu-item("Порядок рецензирования статей")
 
@@ -22,19 +22,19 @@ footer.Footer.Container
 
     .FooterSection.Col12
       h4.FooterSection-Title Контакты
-      p.FooterSection-Line Адрес: p г.Киров, Октябрьский проспект, 133, каб. 138
+      p.FooterSection-Line Адрес: г.Киров, Октябрьский проспект, 133, каб. 138
       p.FooterSection-Line
-        i.fas.fa-phone
+        i.fas.fa-phone.Contacts-Icon
         span +7 (8332) 77-54-53
       p.FooterSection-Line
-        i.fas.fa-envelope
+        i.fas.fa-envelope.Contacts-Icon
         span info@v-vgsha.info
 
     .FooterSection.Col12
       h4.FooterSection-Title Социальные сети
       p.FooterSection-Line
-        i.fab.fa-vk
-        i.fab.fa-twitter
+        i.fab.fa-vk.SocialIcon.SocialIcon-Vk.SocialIcon_Header
+        i.fab.fa-twitter.SocialIcon.SocialIcon-Twitter.SocialIcon_Header
 
   .Copyright.Text_Center
     p Свидетельство о регистрации СМИ ЭЛ №ФС77-73936

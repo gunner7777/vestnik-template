@@ -1,7 +1,11 @@
 .Logo {
   background-color: #f8f8f8;
+  line-height: 50px;
 }
 
 @include mq-max(360px) {
-  .Logo {}
+  .Logo {
+    text-align: center;
+    font-size: 1.3rem;
+  }
 }
