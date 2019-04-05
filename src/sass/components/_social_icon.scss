@@ -1,6 +1,6 @@
 .SocialIcon {
   cursor: pointer;
-  color: #fff;
+  color: $white;
   transition: opacity 0.3s ease;
 
   &:hover {
@@ -12,13 +12,21 @@
     padding: 5px;
     margin-left: 3px;
     margin-right: 3px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &-Vk {
-    background-color: rgba(72, 114, 163, 1);
+    background-color: $vk_bg;
   }
 
   &-Twitter {
-    background-color: rgba(29, 161, 242, 1);
+    background-color: $twitter_bg;
   }
 }

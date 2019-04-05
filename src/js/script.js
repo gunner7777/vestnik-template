@@ -1,7 +1,3 @@
-/* window.FontAwesomeConfig = {
-  searchPseudoElements: true
-} */
-
 document.addEventListener("DOMContentLoaded", function () {
   document.body.addEventListener('click', function (event) {
     /*  if (!event.target.classList.contains('Search-Form') && document.querySelector('.Search-Form').classList.contains('Search-Form_Disabled')) {

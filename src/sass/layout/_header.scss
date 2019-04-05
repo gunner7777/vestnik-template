@@ -3,5 +3,27 @@
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 200px;
-  background-color: #f4c287;
+  background-image: url('../../images/agriculture-1845835_1920.jpg');
+  background-position: 50% 90%;
+  width: 100%;
+  overflow: hidden;
+  color: $white;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .2;
+    z-index: 1;
+  }
+
+  &-Content {
+    position: relative;
+    z-index: 2;
+  }
 }
