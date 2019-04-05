@@ -1,73 +1,41 @@
 .Block {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /*   margin-right: -15px;
+  margin-left: -15px; */
+  margin-right: 85px;
+  margin-left: 85px;
   justify-content: center;
 
-
-  &--justify {
-    &-center {
-      justify-content: center;
-    }
-
-    &-sb {
-      justify-content: space-between;
-    }
-  }
-
-  &--align {
-    &-center {
-      align-items: center;
-    }
-
-    &-top {
-      align-items: flex-start;
-    }
-  }
-
-  /* &__col--margin-lg {
-    margin: 0 30px;
-    @include column(3, "30px");
-  } */
-
-  &--order-first {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  &--order-last {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2;
+  &-Column {
+    flex-direction: column;
   }
 }
-
-/*
-.no-gutters > [class*="flex-block__col"] {
-  margin: 0 0;
-}*/
-
-
 
 @include mq-max(991px) {
-  .flex-block__col {
-    @include column(5);
+  .Block {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
-@include mq-max(767px) {
-  .flex-block__col {
-    @include column(12);
+@include mq-max(800px) {
+  .Block {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
+
+/* @include mq-max(575px) {
+  .Block {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+} */
 
 /* new grid system */
 
-.no-gutters {
+.No-Gutters {
   margin-right: 0;
   margin-left: 0;
 
@@ -280,7 +248,7 @@
   }
 }
 
-@include mq-min(992px) {
+@include mq-min(1200px) {
   .ColXl1 {
     @include column(1);
   }

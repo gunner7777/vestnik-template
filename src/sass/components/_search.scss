@@ -3,4 +3,25 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: right;
+  position: relative;
+
+  &-IconWrapper {
+    font-size: 1.5rem;
+  }
+
+  &-Form {
+    opacity: 1;
+    height: auto;
+    transition: all .3s ease;
+    position: absolute;
+    width: 100%;
+
+  }
+
+  &-Form_Disabled {
+    opacity: 0;
+    height: 0;
+  }
+
+
 }

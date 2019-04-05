@@ -8,8 +8,12 @@
   }
 
   &_Left {
-    text-align-last: left;
+    text-align: left;
   }
+}
+
+img {
+  width: 100%;
 }
 
 .Container {
@@ -18,4 +22,9 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  &-Outer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
