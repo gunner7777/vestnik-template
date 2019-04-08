@@ -1,0 +1,14 @@
+.Nav {
+  /*height: 40px;
+   line-height: 40px;
+  vertical-align: middle; */
+  border-bottom: 1px solid $light_gray;
+  position: relative;
+}
+
+@include mq-max(449px) {
+  .Nav {
+    min-height: 53px;
+    border: none;
+  }
+}

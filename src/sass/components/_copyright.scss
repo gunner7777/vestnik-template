@@ -1,0 +1,14 @@
+.Copyright {
+  margin-top: 20px;
+
+  &-Text {
+    margin-top: 10px;
+  }
+
+  &-Age {
+    border: 1px solid $white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 20px;
+  }
+}

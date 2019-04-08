@@ -11,6 +11,8 @@
 
 /* layout */
 @import "./layout/header";
+@import "./layout/content";
+@import "./layout/nav";
 @import "./layout/footer";
 
 /* components */
@@ -22,4 +24,7 @@
 @import "./components/footer_section";
 @import "./components/footer_menu";
 @import "./components/input";
+@import "./components/button";
 @import "./components/language_switcher";
+@import "./components/copyright";
+@import "./components/menu";

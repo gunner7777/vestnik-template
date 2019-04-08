@@ -1,3 +1,8 @@
 .Input {
-  &-Search {}
+  &-Search {
+    border: none;
+    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }

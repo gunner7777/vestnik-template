@@ -10,12 +10,81 @@
 
   &-Img {
     width: 140px;
+    min-width: 60px;
   }
 }
 
-@include mq-max(360px) {
+@include mq-max(992px) {
   .Logo {
-    text-align: center;
-    font-size: 1.3rem;
+    &-Text {
+      font-size: 2.3rem;
+    }
+
+    &-Img {
+      width: 110px;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Logo {
+    justify-content: center;
+  }
+}
+
+@include mq-max(521px) {
+  .Logo {
+    &-Text {
+      font-size: 2.1rem;
+      margin-left: 10px;
+    }
+
+    &-Img {
+      width: 90px;
+    }
+  }
+}
+
+@include mq-max(461px) {
+  .Logo {
+    &-Text {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include mq-max(446px) {
+  .Logo {
+    &-Text {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include mq-max(416px) {
+  .Logo {
+    &-Img {
+      width: 80px;
+    }
+  }
+}
+
+@include mq-max(290px) {
+  .Logo {
+    &-Text {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@include mq-max(272px) {
+  .Logo {
+    &-Text {
+      font-size: 1.5rem;
+    }
+
+    &-Img {
+      width: 70px;
+    }
   }
 }

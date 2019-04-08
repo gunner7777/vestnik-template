@@ -2,23 +2,33 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+
   &-Icon {
     margin-right: 5px;
   }
 
   &-Social {
     margin: 3px 0;
-    width: 50%;
-    left: 50%;
+    /* width: 50%;
+    left: 50%; */
     position: relative;
   }
 
   &-Line {
     font-size: 1.1rem;
     position: relative;
-    width: 50%;
-    left: 50%;
+    text-align: right;
+    /* width: 50%;
+    left: 50%; */
 
 
+  }
+}
+
+@include mq-max(767px) {
+  .Contacts {
+    &-Line {
+      text-align: center;
+    }
   }
 }

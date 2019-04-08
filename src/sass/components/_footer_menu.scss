@@ -1,4 +1,17 @@
 .FooterMenu {
+  &-Item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &-Link {
     color: #fff;
   }

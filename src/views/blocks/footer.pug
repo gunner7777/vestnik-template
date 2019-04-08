@@ -5,13 +5,13 @@ mixin footer-menu-item(text)
 
 footer.Footer.Container
   .Block
-    .FooterSection.Col12
+    .FooterSection.FooterSection-MenuZhurnal.Col12.ColSm6.ColMd6.ColLg3
       h4.FooterSection-Title Журнал
       ul.FooterMenu
         +footer-menu-item("Контакты")
         +footer-menu-item("Порядок рецензирования статей")
 
-    .FooterSection.Col12
+    .FooterSection.FooterSection-MenuAuthors.Col12.ColSm6.ColMd6.ColLg3
       h4.FooterSection-Title Авторам
       ul
         +footer-menu-item("Правила оформления")
@@ -20,7 +20,7 @@ footer.Footer.Container
         +footer-menu-item("Рецензирование")
         +footer-menu-item("Этика научных публикаций")
 
-    .FooterSection.Col12
+    .FooterSection.FooterSection-Contacts.Col12.ColSm6.ColMd6.ColLg3
       h4.FooterSection-Title Контакты
       p.FooterSection-Line Адрес: г.Киров, Октябрьский проспект, 133, каб. 138
       p.FooterSection-Line
@@ -30,7 +30,7 @@ footer.Footer.Container
         i.fas.fa-envelope.Contacts-Icon
         span info@v-vgsha.info
 
-    .FooterSection.Col12
+    .FooterSection.FooterSection-Social.Col12.ColSm6.ColMd6.ColLg3
       h4.FooterSection-Title Социальные сети
       p.FooterSection-Line
         i.fab.fa-vk.SocialIcon.SocialIcon-Vk.SocialIcon_Header
@@ -38,4 +38,5 @@ footer.Footer.Container
 
   .Copyright.Text_Center
     p Свидетельство о регистрации СМИ ЭЛ №ФС77-73936
-    p &copy; Вестник Вятской ГСХА 16+
+    p.Copyright-Text &copy; Вестник Вятской ГСХА
+      span.Copyright-Age 16+

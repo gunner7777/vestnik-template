@@ -1,0 +1,102 @@
+.TopMenu {
+  text-align: center;
+
+  &-Item {
+    display: inline-block;
+    position: relative;
+  }
+
+  &-Link {
+    display: block;
+    padding: 15px 20px;
+    color: $text;
+    border-top: 4px solid $white;
+
+    &_Active {
+      border-top: 4px solid $dark_green;
+    }
+  }
+
+
+  &-Icon {
+    margin-left: 7px;
+  }
+}
+
+.SubMenu {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  border: 1px solid $light_gray;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+
+  &-Link {
+    display: block;
+    padding: 10px 0;
+    color: $text;
+  }
+}
+
+.MobileMenu {
+  &-Button {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  &-ShowButton {}
+
+  &-CloseButton {}
+}
+
+@include mq-max(449px) {
+  .MobileMenu {
+    &-Button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+    }
+
+    &-ShowButton {
+      display: block;
+    }
+  }
+
+  .TopMenu {
+    display: block;
+    position: absolute;
+    width: 75%;
+    right: 0;
+    padding-top: 30px;
+    text-align: left;
+    background-color: $white;
+    border: 1px solid $light_gray;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+
+    &-Item {
+      display: block;
+    }
+
+    &-Link {
+      border: none;
+
+      &_Active {
+        color: $dark_green;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .SubMenu {
+    display: block;
+    position: relative;
+    width: calc(100% - 35px);
+    background-color: $white;
+    margin-left: 30px;
+    border: none;
+    box-shadow: none;
+  }
+}

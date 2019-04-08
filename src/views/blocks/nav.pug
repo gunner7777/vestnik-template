@@ -1,10 +1,29 @@
-mixin menu-item(text)
-  li.main-menu__item
-    a.main-menu__link(href="#")= text
+mixin main-menu-item(text)
+  li.TopMenu-Item
+    a.TopMenu-Link.TopMenu-Link_Active(href="#")= text
 
-div.nav.shell
-  ul.main-menu.flex-block.flex-block--justify-sb
-    +menu-item("Главная")
-    +menu-item("Журнал")
-    +menu-item("Авторам")
-    +menu-item("Контакты")
+mixin sub-menu-item(text)
+  li.SubMenu-Item
+    a.SubMenu-Link(href="#")= text
+
+nav.Nav
+  i.fas.fa-bars.MobileMenu-Button.MobileMenu-ShowButton
+  i.fas.fa-times.MobileMenu-Button.MobileMenu-CloseButton
+  ul.TopMenu
+    +main-menu-item("Главная")
+    li.TopMenu-Item
+      a.TopMenu-Link(href="#") Журнал
+        i.fas.fa-caret-down.TopMenu-Icon
+      ul.SubMenu
+        +sub-menu-item("Общая информация")
+        +sub-menu-item("Разделы журнала")
+    li.TopMenu-Item
+      a.TopMenu-Link(href="#") Авторам
+        i.fas.fa-caret-down.TopMenu-Icon
+      ul.SubMenu
+        +sub-menu-item("Правила оформления")
+        +sub-menu-item("Правила публикации")
+        +sub-menu-item("Подача заявки")
+        +sub-menu-item("Рецензирование")
+        +sub-menu-item("Этика научных публикаций")
+    +main-menu-item("Контакты")

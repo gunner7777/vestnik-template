@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.body.addEventListener('click', function (event) {
+  /* document.body.addEventListener('click', function (event) {
     /*  if (!event.target.classList.contains('Search-Form') && document.querySelector('.Search-Form').classList.contains('Search-Form_Disabled')) {
 
        document.querySelector('.Search-Form').classList.add('Search-Form_Disabled');
      } */
-  });
+  /* });
 
   const searchButton = document.querySelector('.Search-IconWrapper');
 
@@ -14,5 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log('current', event.currentTarget);
 
     document.querySelector('.Search-Form').classList.toggle('Search-Form_Disabled');
+  });  */
+
+
+  document.body.addEventListener('mouseover', function (event) {
+
   });
 });

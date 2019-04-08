@@ -1,8 +1,6 @@
 .Block {
   display: flex;
   flex-wrap: wrap;
-  /*   margin-right: -15px;
-  margin-left: -15px; */
   margin-right: 40px;
   margin-left: 40px;
   justify-content: center;
@@ -10,14 +8,12 @@
   &-Column {
     flex-direction: column;
   }
-
-
 }
 
-@include mq-max(991px) {
+@include mq-max(1200px) {
   .Block {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -28,12 +24,12 @@
   }
 }
 
-/* @include mq-max(575px) {
+@include mq-max(575px) {
   .Block {
     margin-right: -15px;
     margin-left: -15px;
   }
-} */
+}
 
 /* new grid system */
 
