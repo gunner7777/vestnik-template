@@ -1,23 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /* document.body.addEventListener('click', function (event) {
-    /*  if (!event.target.classList.contains('Search-Form') && document.querySelector('.Search-Form').classList.contains('Search-Form_Disabled')) {
+  document.querySelector('.MobileMenu-Button').addEventListener('click', function (event) {
+    var menuButtonClass = "fa-bars";
+    var closeButtonClass = "fa-times";
 
-       document.querySelector('.Search-Form').classList.add('Search-Form_Disabled');
-     } */
-  /* });
+    event.currentTarget.firstElementChild.classList.toggle(menuButtonClass);
+    event.currentTarget.firstElementChild.classList.toggle(closeButtonClass);
+    document.querySelector('.TopMenu').classList.toggle('TopMenu_Show');
+  });
 
-  const searchButton = document.querySelector('.Search-IconWrapper');
-
-  searchButton.addEventListener('click', function (event) {
-    console.log(document.querySelector('.Search-Form'));
-    console.log('target', event.target);
+  document.querySelector('.TopMenu').addEventListener('click', function (event) {
     console.log('current', event.currentTarget);
+    console.log('target', event.target);
+    if (event.target.classList.contains('TopMenu-Link') || (event.target.parentNode.classList.contains('TopMenu-Link'))) {
+      console.log(event.target.tagName);
+      if ((event.target.firstElementChild !== null && event.target.firstElementChild.tagName === 'svg') || event.target.tagName === 'svg' || event.target.parentNode.tagName === 'svg') {
+        event.target.classList.toggle('TopMenu-Link_Open');
+        /* if (event.target.classList.contains('TopMenu-Link_Open')) {
+          event.target.classList.remove('TopMenu-Link_Open');
+        } else {
+          event.target.classList.add('TopMenu-Link_Open');
+        } */
 
-    document.querySelector('.Search-Form').classList.toggle('Search-Form_Disabled');
-  });  */
 
-
-  document.body.addEventListener('mouseover', function (event) {
-
+        //event.target.classList.toggle('TopMenu-Link_Open');
+        //event.target.nextElementSibling.style.display = "block";
+      }
+    }
   });
 });

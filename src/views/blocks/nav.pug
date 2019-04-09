@@ -7,8 +7,8 @@ mixin sub-menu-item(text)
     a.SubMenu-Link(href="#")= text
 
 nav.Nav
-  i.fas.fa-bars.MobileMenu-Button.MobileMenu-ShowButton
-  i.fas.fa-times.MobileMenu-Button.MobileMenu-CloseButton
+  span.MobileMenu-Button
+    i.fas.fa-bars
   ul.TopMenu
     +main-menu-item("Главная")
     li.TopMenu-Item

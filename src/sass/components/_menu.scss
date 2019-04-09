@@ -11,12 +11,20 @@
     padding: 15px 20px;
     color: $text;
     border-top: 4px solid $white;
+    transition: border-top .2s ease;
+
+    &:hover+.SubMenu {
+      display: block;
+    }
+
+    &:hover {
+      border-top: 4px solid $dark_green;
+    }
 
     &_Active {
       border-top: 4px solid $dark_green;
     }
   }
-
 
   &-Icon {
     margin-left: 7px;
@@ -29,52 +37,64 @@
   background-color: $white;
   border: 1px solid $light_gray;
   width: 250px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+  box-shadow: 0 6px 12px $shadow;
+
+  &:hover {
+    display: block;
+  }
 
   &-Link {
     display: block;
     padding: 10px 0;
     color: $text;
+    transition: background-color .2s ease;
+
+    &:hover {
+      background-color: $dark_green;
+      color: $white;
+    }
   }
 }
 
 .MobileMenu {
   &-Button {
     display: none;
-    font-size: 32px;
-    cursor: pointer;
-    z-index: 5;
   }
-
-  &-ShowButton {}
-
-  &-CloseButton {}
 }
 
 @include mq-max(449px) {
   .MobileMenu {
     &-Button {
+      display: block;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 10px;
-    }
-
-    &-ShowButton {
-      display: block;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 5;
     }
   }
 
   .TopMenu {
     display: block;
+    opacity: 0;
     position: absolute;
     width: 75%;
-    right: 0;
+    right: 15px;
     padding-top: 30px;
     text-align: left;
     background-color: $white;
     border: 1px solid $light_gray;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all .4s ease;
+    z-index: -1;
+
+    &_Show {
+      right: 0;
+      opacity: 1;
+      z-index: 1;
+    }
 
     &-Item {
       display: block;
@@ -83,20 +103,45 @@
     &-Link {
       border: none;
 
+      &:hover {
+        border-top: none;
+        color: $dark_green;
+      }
+
+      &:hover+.SubMenu {
+        display: none;
+      }
+
       &_Active {
         color: $dark_green;
-        font-weight: 700;
+      }
+
+      &_Open {
+        &>.TopMenu-Icon {
+          transform: rotate(180deg);
+        }
+
+        &+.SubMenu {
+          display: block;
+        }
       }
     }
   }
 
   .SubMenu {
-    display: block;
+    display: none;
     position: relative;
     width: calc(100% - 35px);
     background-color: $white;
     margin-left: 30px;
     border: none;
     box-shadow: none;
+
+    &-Link {
+      &:hover {
+        background-color: inherit;
+        color: $dark_green;
+      }
+    }
   }
 }
