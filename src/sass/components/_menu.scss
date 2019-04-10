@@ -13,11 +13,10 @@
     border-top: 4px solid $white;
     transition: border-top .2s ease;
 
-    &:hover+.SubMenu {
-      /* display: block; */
+    /*  &:hover+.SubMenu {
       height: auto;
       visibility: visible;
-    }
+    } */
 
     &:hover {
       border-top: 4px solid $dark_green;
@@ -34,7 +33,6 @@
 }
 
 .SubMenu {
-  /* display: none; */
   height: 0px;
   position: absolute;
   background-color: $white;
@@ -44,14 +42,17 @@
   overflow: hidden;
   visibility: hidden;
 
+  &_Show {
+    height: auto;
+    visibility: visible;
+  }
+
   &:hover {
-    /* display: block; */
     height: auto;
     visibility: visible;
   }
 
   &-Link {
-    /* position: relative; */
     display: block;
     padding: 10px 0;
     color: $text;
@@ -116,10 +117,10 @@
         color: $dark_green;
       }
 
-      &:hover+.SubMenu {
+      /* &:hover+.SubMenu {
         height: 0;
         visibility: hidden;
-      }
+      } */
 
       &_Active {
         color: $dark_green;
