@@ -8,6 +8,10 @@
   &-Column {
     flex-direction: column;
   }
+
+  &_SpaceBetween {
+    justify-content: space-between;
+  }
 }
 
 @include mq-max(1200px) {

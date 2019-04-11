@@ -8,7 +8,7 @@ mixin article-preview(title, author, date, text)
     p
       a(href="#").ArticelPreview-Readmore Read more
 
-.Content.Container
+section.Content.Container
   .Block
     +article-preview(
       "Lorem ipsum dolor sit ametg",
@@ -23,3 +23,9 @@ mixin article-preview(title, author, date, text)
       "12.12.3111",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ut molestias autem commodi. Illum sequi, neque error repellat dolores non quas, explicabo adipisci cum laboriosam doloremque quidem quam hic?"
     )
+
+  nav.PageNav.Block.Block_SpaceBetween
+    p.Col12.ColSm6
+      a.PageNav-Napravl(href="#") < Новые записи
+    p.Col12.ColSm6
+      a.PageNav-Napravl(href="#") Старые записи >

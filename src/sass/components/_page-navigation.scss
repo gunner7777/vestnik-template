@@ -1,0 +1,28 @@
+.PageNav {
+  margin-top: 40px;
+
+  &>p {
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &-Napravl {
+    display: inline-block;
+    padding: 7px 15px;
+    color: $text;
+  }
+}
+
+@include mq-max(575px) {
+  .PageNav {
+    &>p {
+      text-align: center;
+
+      &:last-child {
+        text-align: center;
+      }
+    }
+  }
+}
