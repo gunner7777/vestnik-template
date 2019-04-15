@@ -1,16 +1,55 @@
 .Logo {
   display: flex;
   align-items: center;
+  width: 70%;
 
   &-Text {
     font-size: 2.5rem;
     font-weight: 700;
     margin-left: 20px;
+    color: $white;
   }
 
   &-Img {
     width: 140px;
     min-width: 60px;
+  }
+}
+
+@include mq-max(1318px) {
+  .Logo {
+    width: 75%;
+  }
+}
+
+@include mq-max(1241px) {
+  .Logo {
+    width: 80%;
+  }
+}
+
+@include mq-max(1124px) {
+  .Logo {
+    width: 85%;
+  }
+}
+
+@include mq-max(1065px) {
+  .Logo {
+    width: 90%;
+  }
+}
+
+@include mq-max(1014px) {
+  .Logo {
+    width: 95%;
+  }
+}
+
+
+@include mq-max(991px) {
+  .Logo {
+    width: 100%;
   }
 }
 
