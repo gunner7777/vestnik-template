@@ -1,14 +1,24 @@
 mixin article-preview(title, author, date, text)
-  article.ArticelPreview.Col12.ColSm12.ColMd12.ColLg12.ColXl12
-    h3.ArticelPreview-Title= title
-    div.ArticelPreview-Info
-      p.ArticelPreview-Author= author
-      p.ArticelPreview-Date= date
-    p.ArticelPreview-Text= text
-    p
-      a(href="#").ArticelPreview-Readmore Read more
+  article.ArticleView.Col12.ColSm12.ColMd12.ColLg12.ColXl12
+    h3.ArticleView-Title
+      a.ArticleView-Link(href="#")= title
+    div.ArticleView-Info
+      p.ArticleView-Author= author
+      p.ArticleView-Date= date
+    div.ArticleView-Article
+      p.ArticleView-Text= text
+      p.ArticleView-Text= text
+      p.ArticleView-Text= text
+      ul.ArticleView-Text
+        li First
+        li Second
+
+      p
+        a(href="#").ArticleView-Readmore Read more
 
 section.Content.Container
+  .Block.Block_Left.Col12
+    h1.ArticleView-RubricName Rubric's name
   .Block
     +article-preview(
       "Lorem ipsum dolor sit ametg",

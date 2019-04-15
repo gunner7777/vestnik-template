@@ -1,11 +1,7 @@
 .Search {
-  /* background-color: #cfcfcf; */
   padding-top: 10px;
   padding-bottom: 10px;
-  /* text-align: right; */
   position: relative;
-  /*margin-right: 0;
-  margin-left: 0; */
 
   &-IconWrapper {
     font-size: 1.5rem;
@@ -14,23 +10,12 @@
   &-Form {
     display: flex;
     flex-flow: row nowrap;
-    /* opacity: 1; */
     height: 35px;
     transition: all .3s ease;
     position: absolute;
     right: 0;
     width: 70%;
-    /* position: absolute;
-    width: 100%; */
-
   }
-
-  /* &-Form_Disabled {
-    opacity: 0;
-    height: 0;
-  } */
-
-
 }
 
 @include mq-max(767px) {

@@ -12,6 +12,10 @@
   &_SpaceBetween {
     justify-content: space-between;
   }
+
+  &_Left {
+    justify-content: left;
+  }
 }
 
 @include mq-max(1200px) {

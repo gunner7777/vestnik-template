@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   //first bootstrap
   var windowWidth = window.innerWidth;
 
-  window.addEventListener("resize", function() {
+  window.addEventListener("resize", function () {
     windowWidth = window.innerWidth;
   });
 
   document
     .querySelector(".MobileMenu-Button")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       var menuButtonClass = "fa-bars";
       var closeButtonClass = "fa-times";
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var menuLinks = document.querySelectorAll(".TopMenu-Link");
   menuLinks.forEach(link => {
-    link.addEventListener("mouseenter", function(event) {
+    link.addEventListener("mouseenter", function (event) {
       if (windowWidth > 505) {
         var menuLink = event.currentTarget;
         if (menuLink.childNodes.length > 1) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    link.addEventListener("mouseleave", function(event) {
+    link.addEventListener("mouseleave", function (event) {
       if (windowWidth > 505) {
         var menuLink = event.currentTarget;
         if (menuLink.childNodes.length > 1) {
@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
+    link.addEventListener("click", function (event) {
       if (windowWidth <= 505) {
+        event.preventDefault();
         var menuLink = event.currentTarget;
         if (menuLink.childNodes.length > 1) {
           menuLink.classList.toggle("TopMenu-Link_Open");

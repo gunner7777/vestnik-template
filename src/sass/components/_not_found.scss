@@ -1,0 +1,62 @@
+.NotFound {
+  align-items: center;
+
+  &-Icon {
+    color: $red;
+    font-size: 9rem;
+    margin-right: 30px;
+  }
+
+  &-Title {
+    font-size: 7rem;
+  }
+
+  &-SubTitle {
+    font-size: 2rem;
+  }
+}
+
+@include mq-max(992px) {
+  .NotFound {
+    &-Icon {
+      font-size: 6rem;
+      margin-right: 30px;
+    }
+
+    &-Title {
+      font-size: 4rem;
+    }
+
+    &-SubTitle {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .NotFound {
+
+    &-Icon {
+      font-size: 5rem;
+      margin-right: 15px;
+    }
+
+    &-Title {
+      font-size: 3rem;
+    }
+
+    &-SubTitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include mq-max(287px) {
+  .NotFound {
+    text-align: center;
+
+    &-Icon {
+      margin-right: 0px;
+    }
+  }
+}

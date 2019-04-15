@@ -17,6 +17,7 @@ html(lang="ru")
       defer
     )
     script(
+      data-search-pseudo-elements
       src="vendor/fontawesome.js"
       defer
     )
@@ -24,6 +25,7 @@ html(lang="ru")
   body
     include blocks/header.pug
     include blocks/nav.pug
-    include blocks/content.pug
+    include blocks/not_found.pug
+    //include blocks/content.pug
     include blocks/footer.pug
     script(src="js/script.js")

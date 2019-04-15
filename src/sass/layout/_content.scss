@@ -1,3 +1,10 @@
 .Content {
   flex-grow: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@include mq-max(505px) {
+  padding-bottom: 25px;
+  padding-top: 25px;
 }

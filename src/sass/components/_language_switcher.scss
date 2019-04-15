@@ -17,7 +17,8 @@
     }
 
     &_Active {
-      color: #c3c3c3;
+      background-color: $dark_green;
+      padding: 2px 5px;
     }
   }
 }

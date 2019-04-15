@@ -1,0 +1,122 @@
+.ArticleView {
+  margin: 40px 0 0;
+
+  &:first-child {
+    margin: 15px 0 0;
+  }
+
+  &-RubricName {
+    font-size: 2.2rem;
+  }
+
+  &-SingleTitle {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  &-Title {
+    font-size: 1.7rem;
+    margin-bottom: 7px;
+  }
+
+
+  &-Info {
+    margin-bottom: 12px;
+  }
+
+  &-Author,
+  &-Date {
+    &::before {
+      display: none;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &>svg {
+      font-size: 1.2rem;
+      margin-right: 4px;
+    }
+  }
+
+  &-Author {
+    margin-bottom: 5px;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f2bd";
+    }
+  }
+
+  &-Date {
+    margin-bottom: 0;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f017";
+    }
+  }
+
+  &-Link {
+    color: $text;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $dark_green;
+    }
+  }
+
+  &-Readmore {
+    display: block;
+    width: 150px;
+    padding: 10px 25px;
+    background-color: $dark_green;
+    color: $white;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: rgba($dark_green, .9);
+    }
+  }
+
+  &-Article {
+
+    p,
+    ul,
+    li {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    li {
+      &::before {
+        display: none;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f192";
+      }
+
+      &>svg {
+        font-size: .8rem;
+        margin-right: 4px;
+      }
+    }
+
+    a {
+      color: $dark_green;
+    }
+  }
+}
