@@ -25,7 +25,8 @@
   }
 
   &-Author,
-  &-Date {
+  &-Date,
+  &-Rubric {
     &::before {
       display: none;
       font-style: normal;
@@ -51,12 +52,22 @@
   }
 
   &-Date {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 
     &::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       content: "\f017";
+    }
+  }
+
+  &-Rubric {
+    margin-bottom: 5px;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f02d";
     }
   }
 
@@ -67,6 +78,10 @@
     &:hover {
       color: $dark_green;
     }
+  }
+
+  &-InfoLink {
+    color: $text;
   }
 
   &-Readmore {
@@ -95,28 +110,50 @@
 
     ul {
       padding-left: 15px;
+
+      li {
+        &::before {
+          display: none;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f192";
+        }
+
+        &>svg {
+          font-size: .8rem;
+          margin-right: 4px;
+        }
+      }
     }
 
-    li {
-      &::before {
-        display: none;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f192";
-      }
-
-      &>svg {
-        font-size: .8rem;
-        margin-right: 4px;
-      }
-    }
-
-    a {
+    a:not(.ArticleView-Readmore) {
       color: $dark_green;
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+
+    table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-collapse: collapse;
+
+      tr:nth-of-type(odd) {
+        background-color: rgba($black, .05);
+      }
+
+      td {
+        padding: .75rem;
+        vertical-align: top;
+        border-top: 1px solid $light_gray;
+      }
     }
   }
 }

@@ -1,0 +1,34 @@
+.SearchPage {
+  &-Title {
+    font-size: 2rem;
+  }
+
+  &-WhatFind {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+}
+
+@include mq-max(575px) {
+  .SearchPage {
+    &-Title {
+      font-size: 1.6rem;
+    }
+
+    &-WhatFind {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@include mq-max(300px) {
+  .SearchPage {
+    &-Title {
+      font-size: 1.3rem;
+    }
+
+    &-WhatFind {
+      font-size: 1rem;
+    }
+  }
+}
