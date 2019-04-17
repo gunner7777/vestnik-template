@@ -9,6 +9,10 @@
     font-size: 2.2rem;
   }
 
+  &-NotContent {
+    font-size: 1.4rem;
+  }
+
   &-SingleTitle {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -22,6 +26,10 @@
 
   &-Info {
     margin-bottom: 12px;
+
+    a {
+      color: $text;
+    }
   }
 
   &-Author,
@@ -78,10 +86,6 @@
     &:hover {
       color: $dark_green;
     }
-  }
-
-  &-InfoLink {
-    color: $text;
   }
 
   &-Readmore {

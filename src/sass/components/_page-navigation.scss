@@ -1,32 +1,3 @@
-/* .PageNav {
-  margin-bottom: 30px;
-
-  &>p {
-
-    &:last-child {
-      text-align: right;
-    }
-  }
-
-  &-Napravl {
-    display: inline-block;
-    padding: 7px 15px;
-    color: $text;
-  }
-}
-
-@include mq-max(575px) {
-  .PageNav {
-    &>p {
-      text-align: center;
-
-      &:last-child {
-        text-align: center;
-      }
-    }
-  }
-} */
-
 .PageNav {
   margin-top: 30px;
 }

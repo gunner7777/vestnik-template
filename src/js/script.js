@@ -38,9 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     link.addEventListener("click", function (event) {
+      var menuLink = event.currentTarget;
+      if (menuLink.childNodes.length > 1) {
+        event.preventDefault();
+      }
+
       if (windowWidth <= 505) {
         event.preventDefault();
-        var menuLink = event.currentTarget;
         if (menuLink.childNodes.length > 1) {
           menuLink.classList.toggle("TopMenu-Link_Open");
         }
