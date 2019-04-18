@@ -134,7 +134,7 @@
       }
     }
 
-    a:not(.ArticleView-Readmore) {
+    a:not(.ArticleView-Readmore):not(.wp-block-file__button) {
       color: $dark_green;
     }
 
@@ -157,6 +157,21 @@
         padding: .75rem;
         vertical-align: top;
         border-top: 1px solid $light_gray;
+      }
+    }
+
+    .wp-block-file {
+      a:first-child {
+        font-weight: 700;
+        border-bottom: 1px solid $dark_green;
+        padding-bottom: 2px;
+      }
+
+      &__button {
+        color: $white;
+        background-color: $dark-green;
+        padding: 5px 12px;
+        margin-left: 10px;
       }
     }
   }
