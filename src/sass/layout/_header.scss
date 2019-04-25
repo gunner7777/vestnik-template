@@ -1,8 +1,12 @@
 .Header {
   padding-top: 10px;
   padding-bottom: 50px;
-  background-image: url('../../images/agriculture-1845835_1920.jpg');
-  background-position: 50% 90%;
+  /* background-image: url('../../images/agriculture-1845835_1920.jpg'); */
+  background-image: url('../../images/harvester-2526334_1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 50% 90%; */
+  background-position: 50% 60%;
   width: 100%;
   color: $white;
   position: relative;
