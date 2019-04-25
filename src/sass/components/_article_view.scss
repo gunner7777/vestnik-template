@@ -7,6 +7,7 @@
 
   &-RubricName {
     font-size: 2.2rem;
+    color: #2f627a;
   }
 
   &-NotContent {
@@ -16,6 +17,7 @@
   &-SingleTitle {
     font-size: 2rem;
     margin-bottom: 15px;
+    color: #2f627a;
   }
 
   &-Title {
@@ -46,6 +48,7 @@
     &>svg {
       font-size: 1.2rem;
       margin-right: 4px;
+      color: #d4eeb5;
     }
   }
 
@@ -80,27 +83,27 @@
   }
 
   &-Link {
-    color: $text;
+    color: #d4eeb5;
     transition: color .2s ease;
 
-    &:hover {
+    /*  &:hover {
       color: $dark_green;
-    }
+    } */
   }
 
   &-Readmore {
     display: block;
     width: 150px;
     padding: 10px 25px;
-    background-color: $dark_green;
+    background-color: $footer_bg;
     color: $white;
     text-align: center;
     margin-top: 15px;
     transition: background-color .3s ease;
 
-    &:hover {
+    /* &:hover {
       background-color: rgba($dark_green, .9);
-    }
+    } */
   }
 
   &-Article {
@@ -130,12 +133,13 @@
         &>svg {
           font-size: .8rem;
           margin-right: 4px;
+          color: #d4eeb5;
         }
       }
     }
 
     a:not(.ArticleView-Readmore):not(.wp-block-file__button) {
-      color: $dark_green;
+      color: $footer_bg;
     }
 
     img {
@@ -163,13 +167,13 @@
     .wp-block-file {
       a:first-child {
         font-weight: 700;
-        border-bottom: 1px solid $dark_green;
+        border-bottom: 1px solid $footer_bg;
         padding-bottom: 2px;
       }
 
       &__button {
         color: $white;
-        background-color: $dark-green;
+        background-color: $footer_bg;
         padding: 5px 12px;
         margin-left: 10px;
       }
