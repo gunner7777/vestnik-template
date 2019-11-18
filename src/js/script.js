@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".TopMenu").classList.toggle("TopMenu_Show");
     });
 
-  var menuLinks = document.querySelectorAll(".TopMenu-Link");
-  menuLinks.forEach(link => {
+  var menuLinks = Array.from(document.querySelectorAll(".TopMenu-Link"));
+  menuLinks.forEach(function (link) {
     link.addEventListener("mouseenter", function (event) {
       if (windowWidth > 505) {
         var menuLink = event.currentTarget;

@@ -25,7 +25,6 @@
     margin-bottom: 7px;
   }
 
-
   &-Info {
     margin-bottom: 12px;
 
@@ -45,7 +44,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    &>svg {
+    & > svg {
       font-size: 1.2rem;
       margin-right: 4px;
       color: #d4eeb5;
@@ -84,7 +83,7 @@
 
   &-Link {
     color: #d4eeb5;
-    transition: color .2s ease;
+    transition: color 0.2s ease;
 
     /*  &:hover {
       color: $dark_green;
@@ -99,7 +98,7 @@
     color: $white;
     text-align: center;
     margin-top: 15px;
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
 
     /* &:hover {
       background-color: rgba($dark_green, .9);
@@ -107,7 +106,6 @@
   }
 
   &-Article {
-
     p,
     ul,
     li {
@@ -130,8 +128,8 @@
           content: "\f192";
         }
 
-        &>svg {
-          font-size: .8rem;
+        & > svg {
+          font-size: 0.8rem;
           margin-right: 4px;
           color: #d4eeb5;
         }
@@ -154,11 +152,11 @@
       border-collapse: collapse;
 
       tr:nth-of-type(odd) {
-        background-color: rgba($black, .05);
+        background-color: rgba($black, 0.05);
       }
 
       td {
-        padding: .75rem;
+        padding: 0.75rem;
         vertical-align: top;
         border-top: 1px solid $light_gray;
       }
@@ -178,5 +176,46 @@
         margin-left: 10px;
       }
     }
+  }
+
+  &-CoverAndTitle {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+
+    & > span {
+      margin-left: 15px;
+    }
+  }
+}
+
+.JournalPackYearly {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  &-Item {
+    width: 150px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-Description {
+    position: absolute;
+    background-color: $white;
+    width: 60%;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 600;
   }
 }

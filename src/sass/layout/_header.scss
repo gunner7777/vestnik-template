@@ -1,12 +1,12 @@
 .Header {
-  padding-top: 10px;
-  padding-bottom: 50px;
+  /* padding-top: 10px;
+  padding-bottom: 50px; */
   /* background-image: url('../../images/agriculture-1845835_1920.jpg'); */
-  background-image: url('../../images/harvester-2526334_1920.jpg');
+  background-image: url("../../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: 50% 90%; */
-  background-position: 50% 60%;
+  background-position: 50% 10%;
   width: 100%;
   color: $white;
   position: relative;
@@ -19,12 +19,22 @@
     right: 0;
     left: 0;
     bottom: 0;
-    opacity: .2;
+    opacity: 0.2;
     z-index: 1;
   }
 
   &-Content {
     position: relative;
     z-index: 2;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@include mq-max(767px) {
+  .Header {
+    &-Content {
+      margin-bottom: 30px;
+    }
   }
 }
