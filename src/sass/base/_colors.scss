@@ -1,22 +1,42 @@
-/* $text: #333333;
+/* scheme colors */
+$gray: #333333;
 $red: #d32f2f;
 $white: #ffffff;
 $black: #000000;
-$footer_bg: #222222;
-$dark_green: #00932A;
+$sea: #2f627a;
+$light_green: #9acbaf;
 $light_gray: #dfded0;
-$vk_bg: rgba(72, 114, 163, 1);
-$twitter_bg: rgba(29, 161, 242, 1);
-$shadow: rgba(0, 0, 0, 0.3); */
+$color_for_shadow: #c2d5de;
 
-/* new scheme */
-$text: #333333;
-$red: #d32f2f;
-$white: #ffffff;
-$black: #000000;
-$footer_bg: #2f627a;
-$dark_green: #9acbaf;
-$light_gray: #dfded0;
+/* $shadow: rgba(#c2d5de, 0.5); */
+
+/* style */
+/* $vk_bg: rgba(72, 114, 163, 1);
+$twitter_bg: rgba(29, 161, 242, 1);
+$text: $gray;
+$alert: $red;
+$base-color-on-dark: $white;
+$base-color-dark: $black;
+$base-elements: $sea;
+$accent-color-1: $light_gray;
+$accent-color-2: $light_green;
+$shadow: rgba($color_for_shadow, 0.5); */
+
+$gray: #222222;
+$blue: #3a539b;
+$green: #16a085;
+$purple: #393b4e;
+$gold: #d35400;
+
+$text: $gray;
+$alert: $red;
+$base-color-on-dark: $white;
+$base-color-dark: $black;
+$base-bg-1: $purple;
+$accent-color-1: $light_gray;
+$accent-color-2: $green;
+$accent-color-3: $blue;
+$accent-color-4: $gold;
+$shadow: rgba($gold, 0.3);
 $vk_bg: rgba(72, 114, 163, 1);
 $twitter_bg: rgba(29, 161, 242, 1);
-$shadow: rgba(#c2d5de, 0.5);

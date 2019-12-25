@@ -2,7 +2,7 @@
   align-items: center;
 
   &-Icon {
-    color: $red;
+    color: $alert;
     font-size: 9rem;
     margin-right: 30px;
   }
@@ -35,7 +35,6 @@
 
 @include mq-max(575px) {
   .NotFound {
-
     &-Icon {
       font-size: 5rem;
       margin-right: 15px;

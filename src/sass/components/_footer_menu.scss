@@ -13,11 +13,11 @@
   }
 
   &-Link {
-    color: $white;
-    transition: color .2s ease;
+    color: $base-color-on-dark;
+    transition: color 0.2s ease;
 
     &:hover {
-      color: $dark_green;
+      color: $accent-color-4;
     }
   }
 }

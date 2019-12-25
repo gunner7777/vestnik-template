@@ -10,15 +10,15 @@
     display: block;
     padding: 15px 20px;
     color: $text;
-    border-top: 4px solid $white;
-    transition: border-top .2s ease;
+    border-top: 4px solid $base-color-on-dark;
+    transition: border-top 0.2s ease;
 
     &:hover {
-      border-top: 4px solid $dark_green;
+      border-top: 4px solid $accent-color-4;
     }
 
     &_Active {
-      border-top: 4px solid $dark_green;
+      border-top: 4px solid $accent-color-4;
     }
   }
 
@@ -30,10 +30,10 @@
 .SubMenu {
   height: 0px;
   position: absolute;
-  background-color: $white;
-  border: 1px solid $light_gray;
+  background-color: $base-color-on-dark;
+  border: 1px solid $accent-color-1;
   width: 250px;
-  box-shadow: 0 6px 12px $shadow;
+  /* box-shadow: 0 3px 4px $shadow; */
   overflow: hidden;
   visibility: hidden;
 
@@ -51,11 +51,11 @@
     display: block;
     padding: 10px 0;
     color: $text;
-    transition: background-color .2s ease;
+    transition: background-color 0.2s ease;
 
     &:hover {
-      background-color: $dark_green;
-      color: $white;
+      background-color: $accent-color-4;
+      color: $base-color-on-dark;
     }
   }
 }
@@ -88,10 +88,10 @@
     right: 15px;
     padding-top: 30px;
     text-align: left;
-    background-color: $white;
-    border: 1px solid $light_gray;
-    box-shadow: 0 6px 12px rgba($black, 0.3);
-    transition: all .4s ease;
+    background-color: $base-color-on-dark;
+    border: 1px solid $accent-color-1;
+    box-shadow: 0 6px 12px rgba($base-color-dark, 0.3);
+    transition: all 0.4s ease;
     z-index: -1;
 
     &_Show {
@@ -109,19 +109,19 @@
 
       &:hover {
         border-top: none;
-        color: $dark_green;
+        color: $accent-color-4;
       }
 
       &_Active {
-        color: $dark_green;
+        color: $accent-color-4;
       }
 
       &_Open {
-        &>.TopMenu-Icon {
+        & > .TopMenu-Icon {
           transform: rotate(180deg);
         }
 
-        &+.SubMenu {
+        & + .SubMenu {
           height: auto;
           visibility: visible;
         }
@@ -134,7 +134,7 @@
     visibility: hidden;
     position: relative;
     width: calc(100% - 35px);
-    background-color: $white;
+    background-color: $base-color-on-dark;
     margin-left: 30px;
     border: none;
     box-shadow: none;
@@ -142,7 +142,7 @@
     &-Link {
       &:hover {
         background-color: inherit;
-        color: $dark_green;
+        color: $accent-color-4;
       }
     }
   }

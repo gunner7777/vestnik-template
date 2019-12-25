@@ -7,7 +7,7 @@
 
   &-RubricName {
     font-size: 2.2rem;
-    color: #2f627a;
+    color: $text;
   }
 
   &-NotContent {
@@ -17,7 +17,7 @@
   &-SingleTitle {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #2f627a;
+    color: $text;
   }
 
   &-Title {
@@ -47,7 +47,7 @@
     & > svg {
       font-size: 1.2rem;
       margin-right: 4px;
-      color: #d4eeb5;
+      color: $accent-color-2;
     }
   }
 
@@ -79,10 +79,19 @@
       font-weight: 900;
       content: "\f02d";
     }
+
+    & > a {
+      color: $accent-color-3;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $accent-color-4;
+      }
+    }
   }
 
   &-Link {
-    color: #d4eeb5;
+    color: $accent-color-2;
     transition: color 0.2s ease;
 
     /*  &:hover {
@@ -94,8 +103,8 @@
     display: block;
     width: 150px;
     padding: 10px 25px;
-    background-color: $footer_bg;
-    color: $white;
+    background-color: $base-bg-1;
+    color: $base-color-on-dark;
     text-align: center;
     margin-top: 15px;
     transition: background-color 0.3s ease;
@@ -131,13 +140,18 @@
         & > svg {
           font-size: 0.8rem;
           margin-right: 4px;
-          color: #d4eeb5;
+          color: $accent-color-2;
         }
       }
     }
 
     a:not(.ArticleView-Readmore):not(.wp-block-file__button) {
-      color: $footer_bg;
+      color: $accent-color-3;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color-4;
+      }
     }
 
     img {
@@ -152,26 +166,26 @@
       border-collapse: collapse;
 
       tr:nth-of-type(odd) {
-        background-color: rgba($black, 0.05);
+        background-color: rgba($base-color-dark, 0.05);
       }
 
       td {
         padding: 0.75rem;
         vertical-align: top;
-        border-top: 1px solid $light_gray;
+        border-top: 1px solid $accent-color-1;
       }
     }
 
     .wp-block-file {
       a:first-child {
         font-weight: 700;
-        border-bottom: 1px solid $footer_bg;
+        border-bottom: 1px solid $base-bg-1;
         padding-bottom: 2px;
       }
 
       &__button {
-        color: $white;
-        background-color: $footer_bg;
+        color: $base-color-on-dark;
+        background-color: $base-bg-1;
         padding: 5px 12px;
         margin-left: 10px;
       }
@@ -186,6 +200,17 @@
 
     & > span {
       margin-left: 15px;
+    }
+  }
+
+  &-Keywords {
+    & > a {
+      color: $accent-color-3;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $accent-color-4;
+      }
     }
   }
 }
@@ -208,7 +233,7 @@
 
   &-Description {
     position: absolute;
-    background-color: $white;
+    background-color: $base-color-on-dark;
     width: 60%;
     bottom: 8px;
     left: 50%;

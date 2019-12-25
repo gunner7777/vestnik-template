@@ -7,11 +7,12 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-left: 20px;
-    color: $white;
+    color: $base-color-on-dark;
   }
 
   &-Img {
-    width: 140px;
+    /* width: 140px; */
+    width: 310px;
     min-width: 60px;
   }
 }
@@ -46,7 +47,6 @@
   }
 }
 
-
 @include mq-max(991px) {
   .Logo {
     width: 100%;
@@ -59,15 +59,27 @@
       font-size: 2.3rem;
     }
 
-    &-Img {
+    /* &-Img {
       width: 110px;
-    }
+    } */
   }
 }
 
 @include mq-max(767px) {
   .Logo {
     justify-content: center;
+
+    &-Img {
+      width: 270px;
+    }
+  }
+}
+
+@include mq-max(600px) {
+  .Logo {
+    &-Img {
+      width: 220px;
+    }
   }
 }
 
@@ -79,7 +91,8 @@
     }
 
     &-Img {
-      width: 90px;
+      /* width: 90px; */
+      width: 190px;
     }
   }
 }
@@ -103,7 +116,8 @@
 @include mq-max(416px) {
   .Logo {
     &-Img {
-      width: 80px;
+      /* width: 80px; */
+      width: 160px;
     }
   }
 }
@@ -123,7 +137,8 @@
     }
 
     &-Img {
-      width: 70px;
+      /* width: 70px; */
+      width: 130px;
     }
   }
 }
